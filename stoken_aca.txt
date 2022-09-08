@@ -9,70 +9,70 @@ Montecarlo cycles   200
 Simulation mode     Realistic 
 Capital invested    100000$
 
-Gross win/loss      182254$-13731$, +37408.4p, lr 186967$
-Average profit      10208$/year, 851$/month, 39.26$/day
-Max drawdown        -4677$ 2.8% (MAE -24402$ 14.5%)
-Total down time     1% (TAE 91%)
-Max down time       42 weeks from Apr 2016
-Max open margin     49979$
-Max open risk       1024$
-Trade volume        1064989$ (64509$/year)
-Transaction costs   -120$ spr, -24.08$ slp, 0$ rol
-Capital required    19355$
+Gross win/loss      164107$-14769$, +195695.8p, lr 154501$
+Average profit      9046$/year, 754$/month, 34.79$/day
+Max drawdown        -4652$ 3.1% (MAE -20349$ 13.6%)
+Total down time     1% (TAE 90%)
+Max down time       25 weeks from Jun 2018
+Max open margin     50862$
+Max open risk       1016$
+Trade volume        1117364$ (67681$/year)
+Transaction costs   -126$ spr, 109$ slp, 0$ rol
+Capital required    21194$
 
-Number of trades    32 (2/year)
-Percent winning     75.0%
-Max win/loss        64120$ / -4239$
-Avg trade profit    5266$ 1169.0p (+1685.7p / -381.0p)
-Avg trade slippage  -0.75$ -0.2p (+0.5p / -2.2p)
-Avg trade bars      389 (+475 / -131)
+Number of trades    131 (8/year)
+Percent winning     81.7%
+Max win/loss        11686$ / -3713$
+Avg trade profit    1140$ 1493.9p (+2009.8p / -806.4p)
+Avg trade slippage  0.83$ 1.1p (+1.6p / -1.3p)
+Avg trade bars      333 (+158 / -85)
 Max trade bars      2140 (620 weeks)
-Time in market      300%
-Max open trades     3
-Max loss streak     2 (uncorrelated 3)
+Time in market      1050%
+Max open trades     8
+Max loss streak     5 (uncorrelated 3)
 
-Annual growth rate  6.17% (ROI 10.21%)
-Profit factor       13.27 (PRR 7.80)
-Reward/Risk ratio   36.0
-Sharpe ratio        0.62 (Sortino 0.57)
-R2 coefficient      0.879
-Ulcer index         5.1%
-Scholz tax          44448 EUR
+Annual growth rate  5.69% (ROI 9.05%)
+Profit factor       11.11 (PRR 8.34)
+Reward/Risk ratio   32.1
+Sharpe ratio        0.75 (Sortino 0.70)
+R2 coefficient      0.900
+Ulcer index         3.8%
+Scholz tax          39388 EUR
 
 Year Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total
 2006       0   3   3  -2  -1   3   1  -1   4   5  -2   +14
-2007   4  -1  -1   2   0  -5  -2   1   5   3  -1   2    +8
-2008   4   3  -2  -3  -1   2  -0  -3   0  -1   8   6   +12
-2009  -6  -1   3  -4  -2  -1   2   4   2  -1   7   0    +2
-2010  -3   3   4   4  -3  -3   3  -0   5   4  -0   3   +18
-2011  -0   4  -0   5  -0  -2   2   0  -9   5  -1  -2    +2
-2012   5  -1   2   1  -4   2   2   0  -1  -1   0   1    +8
-2013   2   1   2   4  -3  -1   1  -3   2   3  -2   0    +5
-2014   2   3   1   2   2   1  -0   3  -3   5   2   1   +18
-2015   4  -1   0  -3  -0  -3   3  -4   1   4  -0   0    +1
-2016  -2  -1   4  -0   0   4   3  -2  -1  -3  -1   2    +3
-2017   0   2  -1   0   0   1   1   0  -0  -0   2   0    +7
-2018  -1  -2  -0  -0   0  -0   1   1  -1  -2   1  -2    -5
-2019   2  -0   2  -0   0   2   0   1   0   1  -0   1    +9
+2007   4  -1  -1   2   0  -4  -2   1   4   3  -1   2    +7
+2008   3   2  -1  -3  -1   2  -0  -1   0  -1   8   6   +13
+2009  -5  -1   2  -3  -2  -1   2   4   2  -1   6  -0    +3
+2010  -2   3   3   3  -2  -2   2   0   4   3   0   3   +15
+2011  -0   3  -0   4  -0  -2   2   0  -6   3  -0  -1    +2
+2012   3   0   1   0  -3   1   1   0  -0  -1   0   0    +5
+2013   1   1   1   3  -2  -1   1  -2   1   2  -1   0    +4
+2014   1   2   0   1   1   1  -0   2  -2   3   2   1   +13
+2015   2  -1   0  -1  -0  -2   2  -2   0   2  -0  -0    +0
+2016  -0  -0   2   0  -0   3   2  -1  -0  -2  -1   1    +2
+2017   0   1  -0   0   0   1   0   1  -0   0   1   0    +6
+2018  -0  -1  -0  -0   0  -0   0   1  -1  -2   1  -2    -4
+2019   2  -0   2  -0   0   2   0   1   0   1  -0   1   +10
 2020   1  -2  -2   1   0   0   2   0  -1  -1   0   2    +1
-2021  -1  -0   1   2   0   1   1   1  -2   2  -0   2    +8
-2022  -3  -1   2  -2  -1  -1   1  -2   2                -6
+2021  -1   0   1   2   0   1   2   1  -2   2  -0   2    +9
+2022  -2  -1   1  -2  -1  -1   1  -2   2                -5
 
 Portfolio analysis  OptF  ProF  Win/Loss   Wgt%
 
-GLD-US avg          ----  6.51    3/3      21.3  
-IEF-US avg          ----  38.76    8/2      7.3  
-SPY-US avg          ----  9.56    5/1      21.5  
-TLT-US avg          ----  5.60    4/2       7.3  
-VNQ-US avg          ----  ++++    4/0      42.6  
+GLD-US avg          ----  5.96   16/9      22.5  
+IEF-US avg          ----  40.02   21/3      8.5  
+SPY-US avg          ----  8.94   25/6      24.3  
+TLT-US avg          ----  6.63   16/3      10.1  
+VNQ-US avg          ----  122.57   29/3    34.6  
 
-GLD avg             ----  6.25    7/5      28.5  
-SPY avg             ----  10.05    9/3     24.5  
-VNQ avg             ----  ++++    8/0      47.0  
+GLD avg             ----  6.15   32/12     32.6  
+SPY avg             ----  9.49   34/9      27.8  
+VNQ avg             ----  140.16   41/3    39.6  
 
-GLD-US:GLD:L        ----  6.51    3/3      21.3  
-IEF-US:SPY:L        ----  16.37    4/2      3.0  
-IEF-US:VNQ:L        ----  ++++    4/0       4.3  
-SPY-US:SPY:L        ----  9.56    5/1      21.5  
-TLT-US:GLD:L        ----  5.60    4/2       7.3  
-VNQ-US:VNQ:L        ----  ++++    4/0      42.6  
+GLD-US:GLD:L        ----  5.96   16/9      22.5  
+IEF-US:SPY:L        ----  17.10    9/3      3.5  
+IEF-US:VNQ:L        ----  ++++   12/0       5.0  
+SPY-US:SPY:L        ----  8.94   25/6      24.3  
+TLT-US:GLD:L        ----  6.63   16/3      10.1  
+VNQ-US:VNQ:L        ----  122.57   29/3    34.6  

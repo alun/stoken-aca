@@ -1,78 +1,83 @@
 Test stoken_aca , Zorro 2.502
 
 Simulated account   AssetsFix 
-Bar period          24 hours (avg 2088 min)
-Total processed     6400 bars
-Test period         2006-02-28..2022-09-02 (4157 bars)
+Bar period          24 hours (avg 2089 min)
+Total processed     6404 bars
+Test period         2006-02-28..2022-09-06 (4159 bars)
 Lookback period     252 bars (73 weeks)
 Montecarlo cycles   200
 Simulation mode     Realistic 
 Capital invested    100000$
 
-Gross win/loss      164107$-14769$, +195695.8p, lr 154501$
-Average profit      9046$/year, 754$/month, 34.79$/day
-Max drawdown        -4652$ 3.1% (MAE -20349$ 13.6%)
-Total down time     1% (TAE 90%)
+Gross win/loss      257929$-69091$, +158005.3p, lr 226744$
+Average profit      11431$/year, 953$/month, 43.96$/day
+Max drawdown        -21179$ 11.2% (MAE -68357$ 36.2%)
+Total down time     6% (TAE 91%)
 Max down time       25 weeks from Jun 2018
-Max open margin     50862$
-Max open risk       1016$
-Trade volume        1117364$ (67681$/year)
-Transaction costs   -126$ spr, 109$ slp, 0$ rol
-Capital required    21194$
+Max open margin     155525$
+Max open risk       1014$
+Trade volume        23718748$ (1435743$/year)
+Transaction costs   -2157$ spr, 1102$ slp, 0$ rol
+Capital required    56970$
 
-Number of trades    131 (8/year)
-Percent winning     81.7%
-Max win/loss        11686$ / -3713$
-Avg trade profit    1140$ 1493.9p (+2009.8p / -806.4p)
-Avg trade slippage  0.83$ 1.1p (+1.6p / -1.3p)
-Avg trade bars      333 (+158 / -85)
-Max trade bars      2140 (620 weeks)
-Time in market      1050%
-Max open trades     8
-Max loss streak     5 (uncorrelated 3)
+Number of trades    473 (29/year)
+Percent winning     85.0%
+Max win/loss        19566$ / -11414$
+Avg trade profit    399$ 334.0p (+536.9p / -814.2p)
+Avg trade slippage  2.33$ 1.9p (+2.4p / -0.7p)
+Avg trade bars      79 (+45 / -79)
+Max trade bars      1015 (294 weeks)
+Time in market      908%
+Max open trades     12
+Max loss streak     7 (uncorrelated 3)
 
-Annual growth rate  5.69% (ROI 9.05%)
-Profit factor       11.11 (PRR 8.34)
-Reward/Risk ratio   32.1
-Sharpe ratio        0.75 (Sortino 0.70)
-R2 coefficient      0.900
-Ulcer index         3.8%
-Scholz tax          39388 EUR
+Annual growth rate  6.63% (ROI 11.43%)
+Profit factor       3.73 (PRR 3.17)
+Reward/Risk ratio   8.9
+Sharpe ratio        0.52 (Sortino 0.48)
+R2 coefficient      0.846
+Ulcer index         7.0%
+Scholz tax          49806 EUR
 
 Year Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total
-2006       0   3   3  -2  -1   3   1  -1   4   5  -2   +14
-2007   4  -1  -1   2   0  -4  -2   1   4   3  -1   2    +7
-2008   3   2  -1  -3  -1   2  -0  -1   0  -1   8   6   +13
-2009  -5  -1   2  -3  -2  -1   2   4   2  -1   6  -0    +3
-2010  -2   3   3   3  -2  -2   2   0   4   3   0   3   +15
-2011  -0   3  -0   4  -0  -2   2   0  -6   3  -0  -1    +2
-2012   3   0   1   0  -3   1   1   0  -0  -1   0   0    +5
-2013   1   1   1   3  -2  -1   1  -2   1   2  -1   0    +4
-2014   1   2   0   1   1   1  -0   2  -2   3   2   1   +13
-2015   2  -1   0  -1  -0  -2   2  -2   0   2  -0  -0    +0
-2016  -0  -0   2   0  -0   3   2  -1  -0  -2  -1   1    +2
-2017   0   1  -0   0   0   1   0   1  -0   0   1   0    +6
-2018  -0  -1  -0  -0   0  -0   0   1  -1  -2   1  -2    -4
-2019   2  -0   2  -0   0   2   0   1   0   1  -0   1   +10
-2020   1  -2  -2   1   0   0   2   0  -1  -1   0   2    +1
-2021  -1   0   1   2   0   1   2   1  -2   2  -0   2    +9
-2022  -2  -1   1  -2  -1  -1   1  -2   2                -5
+2006       0  -0   3  -1  -1   2   1  -0   3   5  -2    +8
+2007   4  -1  -1   2   0  -4  -1   1   5   3  -1   2   +10
+2008   3   3  -1  -3  -1   2  -0  -1   0  -1  10   8   +18
+2009  -7  -1   4  -4  -3  -1   3   6   3  -1   9   0    +7
+2010  -4   4   5   5  -3  -3   3   0   6   4   0   4   +23
+2011  -0   5  -0   6  -1  -3   3  -4  -5  -0   1  -2    -2
+2012   4  -0   2   1  -4   2   2   0  -1  -1   0   0    +6
+2013   2   1   2   4  -3  -2   1  -4   2   4  -1   0    +6
+2014   2   3   1   2   3   1  -0   4  -4   5   3   2   +22
+2015   5  -2   0  -3  -0  -4   4  -4   1   4  -0  -0    -0
+2016  -2  -0  -0   1  -1   5   3  -2  -1  -3  -1   2    -1
+2017   1   3  -1   1   1   1   1   1  -1   0   2   0   +10
+2018  -1  -2  -0  -1   1  -0   0   2  -2  -4   3  -4    -9
+2019   1  -1   4  -1   0   4   1   3  -0   2  -0   2   +17
+2020   2  -5  -3   2   1   1   4   0  -3  -1   2   3    +3
+2021  -1   0   1   5   1   3   4   2  -5   6  -0   4   +21
+2022  -6  -3   3  -5  -5  -1   1  -4  -2               -19
 
 Portfolio analysis  OptF  ProF  Win/Loss   Wgt%
 
-GLD-US avg          ----  5.96   16/9      22.5  
-IEF-US avg          ----  40.02   21/3      8.5  
-SPY-US avg          ----  8.94   25/6      24.3  
-TLT-US avg          ----  6.63   16/3      10.1  
-VNQ-US avg          ----  122.57   29/3    34.6  
+GLD-US avg          ----  3.30   23/11     24.6  
+IEF-US avg          ----  2.00  122/20      5.6  
+SPY-US avg          ----  9.87   71/15     36.4  
+TLT-US avg          ----  3.01  116/8      12.8  
+VNQ-US avg          ----  3.10   70/17     20.7  
 
-GLD avg             ----  6.15   32/12     32.6  
-SPY avg             ----  9.49   34/9      27.8  
-VNQ avg             ----  140.16   41/3    39.6  
+Dividends avg       ----  ++++  290/0      27.9  
+GLD avg             ----  2.78   42/19     30.4  
+SPY avg             ----  6.59   35/24     31.7  
+VNQ avg             ----  1.72   35/28     10.0  
 
-GLD-US:GLD:L        ----  5.96   16/9      22.5  
-IEF-US:SPY:L        ----  17.10    9/3      3.5  
-IEF-US:VNQ:L        ----  ++++   12/0       5.0  
-SPY-US:SPY:L        ----  8.94   25/6      24.3  
-TLT-US:GLD:L        ----  6.63   16/3      10.1  
-VNQ-US:VNQ:L        ----  122.57   29/3    34.6  
+GLD-US:GLD:L        ----  3.30   23/11     24.6  
+IEF-US:Dividends:L  ----  ++++   94/0       4.8  
+IEF-US:SPY:L        ----  1.72   15/9       1.1  
+IEF-US:VNQ:L        ----  0.93   13/11     -0.3  
+SPY-US:Dividends:L  ----  ++++   51/0       5.8  
+SPY-US:SPY:L        ----  8.46   20/15     30.6  
+TLT-US:Dividends:L  ----  ++++   97/0       6.9  
+TLT-US:GLD:L        ----  1.92   19/8       5.8  
+VNQ-US:Dividends:L  ----  ++++   48/0      10.4  
+VNQ-US:VNQ:L        ----  2.04   22/17     10.2  

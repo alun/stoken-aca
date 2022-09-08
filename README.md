@@ -1,5 +1,9 @@
 # Changelog
 
+## v3
+
+- run on unadjusted price with explicit dividends accounting
+
 ## v2
 
 - added full portfolio rebalance (33% each slice):

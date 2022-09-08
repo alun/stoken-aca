@@ -16,7 +16,7 @@ const bool Reinvest = true;
 // should we rebalance portfolio so to keep it 1/3 each slice
 const bool DoRebalace = true;
 
-// if true - then buy rist assets and hold them till the end
+// if true - then buy risk assets and hold them till the end
 // useful as a benchmark
 const bool BuyAndHold = false;
 
@@ -42,13 +42,49 @@ void printPortfolio() {
     algo(_algo);
     while (_asset = of(ASSETS)) {
       asset(_asset);
+      var assetValue = 0;
       for (current_trades) {
-        var value = TradeLots * priceC();
-        print(TO_CSV, "\n%s:%s %.2f", Asset, Algo, value);
+        assetValue += TradeLots * priceC();
+      }
+      if (assetValue > 0) {
+        print(TO_CSV, "\n%s:%s %.2f", Asset, Algo, assetValue);
       }
     }
   }
   print(TO_CSV, "\nTotal: %.2f", portfolioValue());
+}
+
+// manually receive dividends, stored in fVal, kudos to AndrewAMD:
+// https://www.vitaltrades.com/2020/07/14/adding-exact-fee-and-credit-calculations-to-zorro/
+void receiveDividends() {
+
+  string _algo, _asset;
+  while (_algo = of(ALGOS)) {
+    algo(_algo);
+    while (_asset = of(ASSETS)) {
+      asset(_asset);
+      var dividends = priceC() - priceO();
+      if (dividends < 0.01) {
+        continue;
+      }
+      var assetLots = 0;
+      for (current_trades) {
+        assetLots += TradeLots;
+      }
+      if (assetLots == 0) {
+        continue;
+      }
+
+      algo("Dividends");
+      TRADE T;
+      memset(&T, 0, sizeof(T));
+      T.nLots = assetLots;
+      T.fEntryPrice = priceC() - dividends;
+      T.flags |= TR_OPEN;
+      TRADE *p = enterTrade(&T);
+      exitTrade(p);
+    }
+  }
 }
 
 // Plots allocation of current capital per algo
@@ -83,9 +119,8 @@ void plotAllocation() {
     }
 
     // plot on the asset chart which was selected in the [Asset]
-    //	combo box when test started
+    // combo box when test started
     asset(DefaultAsset);
-    // print(TO_CSV, "\n %s: %2.f %2.f", "a", algoTotal, total);
     plot(Algo, algoTotal / total, maybeNew | SPLINE, col);
     if (maybeNew == NEW) {
       maybeNew = 0;
@@ -228,6 +263,9 @@ function run() {
       rebalance();
       lastYearRebalance = year();
     }
+
+    // receive dividends considering portfolio positions
+    receiveDividends();
 
     // plot and log debug information
     plotAllocation();
